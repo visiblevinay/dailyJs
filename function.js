@@ -32,60 +32,61 @@ We’ve already seen examples of built-in functions, like alert(message), prompt
 // }
 // greet2()
 
-// let secondName = "Raam";
-// function showMessage(){
-//     secondName = "Raam Kumar";
-//     let message = "Hello: "  + secondName;
-//     console.log(message);
-// };
-// console.log(secondName)
-// showMessage()
-// console.log(secondName);
+ // let secondName = "Raam";
+ // function showMessage(){
+ //     secondName = "Raam Kumar";
+ //     let message = "Hello: "  + secondName;
+ //     console.log(message);
+ // };
+ // console.log(secondName)
+ // showMessage()
+ // console.log(secondName);
 
-//parameters
-function showMessage(from, text){
-    console.log(from+ " : " +text);
+// //parameters
+// function showMessage(from, text){
+//     console.log(from+ " : " +text);
     
-};
-showMessage("vinay", "kumar");
+// };
+// showMessage("vinay", "kumar");
 
 //Returning a value
 // A function can return a value back into the calling code as the result.
 
 
-function sum(a ,b){
-    return a + b;
-};
-let result = sum(2,2)
-console.log(result);
+// function sum(a ,b){
+//     return a + b;
+// };
+// let result = sum(2,2)
+// console.log(result);
 
-let age = prompt("how old are you?", 18);
-function checkage(age){
-    if(age >= 18){
-        return true;
-    }else{
-        return confirm("do you have permission?")
-    }
-};
-if(checkage(age)){
-    console.log("Access granted")
-}else{
-    console.log("Access denied");
-    
-};
-
-
-
-// function showMovie(age) {
-//     if ( !checkAge(age) ) {
-//       return;
+// let age = prompt("how old are you?", 18);
+// function checkage(age){
+//     if(age >= 18){
+//         return true;
+//     }else{
+//         return confirm("do you have permission?")
 //     }
-  
-//     alert( "Showing you the movie" ); // (*)
-//     // ...
-//   }
+// };
+// if(checkage(age)){
+//     console.log("Access granted")
+// }else{
+//     console.log("Access denied");
+    
+// };
 
+//nested function
 
+function addSquares(a,b){
+    let sa = square(a);
+    let sb = square(b);
+
+    function square(num){
+        return num * num;
+    }
+    return sa + sb;
+}
+
+console.log(addSquares(2,4));
 
 
 
