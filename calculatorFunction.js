@@ -1,6 +1,6 @@
 function calculator(num1, num2, operation){
     let result;
-
+    
     switch (operation){
         case "add": result = num1 + num2;
         console.log(result);
@@ -20,13 +20,13 @@ function calculator(num1, num2, operation){
         break;
 
         default:
-            console.log(null)
+            console.log(null);
 
     }
-    // console.log(result);
+ 
+    return `Final equation : ${result}`;
 }
 
-calculator(50, 5, "add")
-
+console.log(calculator(5,20,"add"));
 
 
